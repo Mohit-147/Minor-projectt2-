@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DishDyanamo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="https://img.icons8.com/?size=160&id=TIhY0y1RktRZ&format=png" alt="Logo">
+      <span>🥘 DishDynamo</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a onclick="window.location.href='Recipe videos.html'">Recipe Videos<a/>
+      <a onclick="window.location.href='Membership plans.html'"">Membership Plans</a>
+    </nav>
+
+    <div class="auth-section">
+      <div class="register">
+        <button onclick="window.location.href='register.html'">Register</button>
+      </div>
+      
+      <button onclick="window.location.href='login.html'">Login</button>
+    </div>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search for a recipe...">
+    <button id="searchButton">Search</button>
+  </div>
+
+  <div id="result"></div>
+
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1>Master Your Meals with DishDynamo<br>Healthy Recipes, Step-by-Step Help </h1>
+      <p>Discover delicious, easy-to-follow recipes tailored to your lifestyle with DishDynamo. 
+        Our chatbot guides you step-by-step through each dish while helping you track calories and make informed food choices. 
+        Whether you're cooking at home or following a strict fitness routine, DishDynamo offers smart, healthy alternatives to keep you energized. 
+        Cook smart, eat better, and stay on top of your health goals—all in one place.</p>
+      <div class="hero-image">
+        <img src="https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" Delicious Noodles Dish" />
+      </div>
+    </div>
+  </div>
+
+
+  <div class="recipe-main-container">
+    <div class="recipe-header">
+      <h2>Non-Veg Recipes</h2>
+    </div>
+    <div id="recipes" class="recipe-container">
+
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="meal-header">
+      <h1>Popular Meals</h1>
+    </div>
+    <div class="slider-controls">
+      <a href="#" onclick="prevSlide()">←</a>
+      <a href="#" onclick="nextSlide()">→</a>
+    </div>
+    <div class="meal-container" id="mealContainer"></div>
+  </div>
+
+
+
+
+
+
+  <div class="recipe-week-section">
+    <div class="recipe-week-container">
+
+      <div class="recipe-image">
+        <img src="https://th.bing.com/th/id/OIP.T5zNe-VsP5QxfTFT0GZpLwHaLH?rs=1&pid=ImgDetMain" alt="Salad Dish" />
+      </div>
+      <div class="recipe-text">
+        <h2>Recipe Of The Week</h2>       
+        <p>
+          a delicious dish selected to inspire your taste buds and healthy eating goals! 
+          Each week, we feature a unique recipe that’s easy to cook, packed with flavor, and perfectly balanced in nutrients.
+           Whether you're a beginner or a seasoned chef, you’ll love trying something new. Don’t forget to check the calorie count and nutrition tips included.
+            Let’s make cooking fun and smart—one recipe at a time!
+        <p/>
+
+        <ul class="recipe-list">
+          <li>Kumpir</li>
+          <li>Bigos (Hunters Stew)</li>
+          <li class="active">
+            Vegetable Shepherds Pie<span class="view-link">View</span>
+          </li>
+          <li>Apple & Blackberry Crumble</li>
+          <li>Oxtail with broad beans</li>
+          <li>Lamb and Potato pie</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="right-dish">
+      <img src="https://th.bing.com/th/id/OIP.1mw_H2HOm-Re_OAzVpn4fAHaLH?rs=1&pid=ImgDetMain" alt="Teriyaki Dish" />
+    </div>
+  </div>
+
+
+  <section class="trending-section">
+    <h2>Trending Recipes</h2>
+    <div class="category-buttons">
+      <button class="active">Pasta & Risotto</button>
+      <button>Sandwiches & wraps</button>
+      <button>Meatball</button>
+      <button>Chinese Food</button>
+      <button>Dessert</button>
+    </div>
+
+    <div class="trending-recipes">
+      <div class="recipe-card">
+        <img src="https://th.bing.com/th/id/OIP.SfDw13gVTXmrGKr4xEHe3gHaKV?rs=1&pid=ImgDetMain" alt="Lazy Day Pancakes" />
+        <h3>Lazy Day<br>Pancakes</h3>
+      </div>
+      <div class="recipe-card">
+        <img src="https://th.bing.com/th/id/OIP.9VZi_X4Ez5RJBq1r_nf3KQHaLH?rs=1&pid=ImgDetMain" alt="Cheesy Mushroom Galette" />
+        <h3>Cheesy Mushroom<br>Galette</h3>
+      </div>
+      <div class="recipe-card">
+        <img src="https://th.bing.com/th/id/OIP.iwohAsh4eThwneMompTNeQHaLH?rs=1&pid=ImgDetMain" alt="Supremely Easy Teriyaki Chicken" />
+        <h3>Supremely Easy Teriyaki<br>Chicken</h3>
+      </div>
+      <div class="recipe-card">
+        <img src="https://www.themealdb.com/images/media/meals/4i5cnx1587672171.jpg" alt="Krispy Kreme Donut" />
+        <h3>Krispy Kreme<br>Donut</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="membership-section">
+    <div class="membership-container">
+      <div class="membership-content">
+        <h2>Buy Membership.<br>Get All Our Recipes Video Access</h2>
+        <p>Unlock full access to all our exclusive recipe videos! Get step-by-step video guides, cooking tips, 
+          and calorie breakdowns for every dish. Perfect for food lovers who want to cook smarter and eat healthier. 
+          Join now and start your culinary journey with us!</p>
+        <button>Buy Now</button>
+      </div>
+  </section>
+
+  <section class="testimonials-section">
+    <h2>Hear From Our Viewers</h2>
+    <div class="testimonials-container">
+
+      <div class="testimonial-card">
+        <div class="testimonial-text-card">
+          <p class="testimonial-text">Delightful!!!</p>
+          <p class="testimonial-message">
+            "I’ve always loved cooking, but trying new recipes used to feel risky. This website made everything 
+            so simple with step-by-step videos! The dishes turn out delicious. 
+            I especially love the calorie breakdowns—it helps me make healthier choices without sacrificing flavor. 
+          </p>
+        </div>
+        <div class="testimonial-profile">
+
+          <h3>Nancy sharma</h3>
+          <p>(Homemaker,Delhi)</p>
+        </div>
+      </div>
+
+
+      <div class="testimonial-card">
+        <div class="testimonial-text-card">
+          <p class="testimonial-text">Awesome!!</p>
+          <p class="testimonial-message">
+            "Living in a hostel, it's tough to find healthy and tasty food. But this website made my life easier!
+             The recipes are simple, quick, and come with calorie details. The ‘Recipe of the Week’ section is
+              my favorite – always something new to try!"
+          </p>
+        </div>
+        <div class="testimonial-profile">
+          
+          <h3>Amit Mehta</h3>
+          <p>(College student,Pune)</p>
+        </div>
+      </div>
+
+
+      <div class="testimonial-card">
+        <div class="testimonial-text-card">
+          <p class="testimonial-text">Fantastic!!</p>
+          <p class="testimonial-message">
+            "As a busy professional, I often struggle to find time to cook.Easy to follow!
+            The recipes are quick and the calorie counts help me stay on track with my health goals. 
+            I love the variety and how everything is laid out so clearly!"
+            
+          </p>
+        </div>
+        <div class="testimonial-profile">
+          
+          <h3>Neha Kapoor</h3>
+          <p>(Fitness Trainer)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about-chef">
+    <div class="left-content">
+      <h2>Know More About</h2>
+    </div>
+
+    <div class="center-image">
+      <img src="https://cdn.britannica.com/86/145786-050-5BD27317/chef-cooking-restaurant-kitchen.jpg" alt="Chef Cooking" />
+    </div>
+
+    <div class="right-content">
+      <p>
+        DishDynamo is your intelligent kitchen companion, designed to transform ingredients into delicious meals in
+         seconds. Whether you're staring at a nearly empty fridge or just craving something new, our smart recipe 
+         generator helps you whip up creative, personalized dishes using whatever you have on hand. No more endless 
+         scrolling or guesswork—DishDynamo brings you curated recipes tailored to your taste and time.
+      </p>
+      <p>
+        Powered by advanced AI, DishDynamo also features an interactive chatbot that’s here to help you every step of
+         the way. From answering cooking questions in real-time to suggesting substitutions or meal plans, our 
+         chatbot makes cooking more fun and less stressful. Whether you're a beginner or a seasoned home chef, 
+         DishDynamo brings inspiration, support, and simplicity to your kitchen.
+      </p>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-section logo-social">
+        <img src="images/logo.png" alt="Just for Two" class="footer-logo" />
+        <div class="social-icons">
+          <a href="#"><img src="https://tse2.mm.bing.net/th?id=OIP.tpKcCK-gSnqRpdiNtzrobAHaHa&pid=Api&P=0&h=180"
+              alt="Facebook" /></a>
+          <a href="#"><img src="https://tse3.mm.bing.net/th?id=OIP.Ca7BjVTT_MzkBTENBh3vmAHaHa&pid=Api&P=0&h=180"
+              alt="Twitter" /></a>
+          <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.nCmb7tgt3ol5ICEHVcTbEwHaHk&pid=Api&P=0&h=180"
+              alt="Instagram" /></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Important Links</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Recipes Video</a></li>
+          <li><a href="#">Membership Plans</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-section">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms And Conditions</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p><span class="icon">📍</span> Vrboya 1503 / 19A 147 00, Praha 4, Vietnam</p>
+        <p><span class="icon">✉</span> Info@justforyou.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js">
+  </script>
+<script>
+(function () {
+  if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+    window.chatbase = (...args) => {
+      if (!window.chatbase.q) {
+        window.chatbase.q = [];
+      }
+      window.chatbase.q.push(args);
+    };
+    window.chatbase = new Proxy(window.chatbase, {
+      get(target, prop) {
+        if (prop === "q") {
+          return target.q;
+        }
+        return (...args) => target(prop, ...args);
+      },
+    });
+  }
+
+  const onLoad = function () {
+    const script = document.createElement("script");
+    script.src = "https://www.chatbase.co/embed.min.js";
+    script.id = "TuM6hJCWWF_R9QMkxA5AN"; 
+    script.setAttribute("domain", "www.chatbase.co");
+    document.body.appendChild(script);
+  };
+
+  if (document.readyState === "complete") {
+    onLoad();
+  } else {
+    window.addEventListener("load", onLoad);
+  }
+})();
+</script>
+
+</body>
+
+</html>
