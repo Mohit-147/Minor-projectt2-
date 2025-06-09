@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy Membership Plans</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 30px;
+      color: #333;
+    }
+
+    .plans-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 40px auto;
+      max-width: 1000px;
+    }
+
+    .plan {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .plan:hover {
+      transform: scale(1.05);
+    }
+
+    .plan h2 {
+      color: #007BFF;
+    }
+
+    .price {
+      font-size: 24px;
+      margin: 10px 0;
+      color: #222;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Choose Your Membership Plan</h1>
+
+  <div class="plans-container">
+    <div class="plan">
+      <h2>Basic</h2>
+      <p class="price">₹99 / month</p>
+      <ul>
+        <li>Access to limited recipes</li>
+        <li>Basic calorie counter</li>
+        <li>Email support</li>
+      </ul>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="plan">
+      <h2>Pro</h2>
+      <p class="price">₹199 / month</p>
+      <ul>
+        <li>All Basic features</li>
+        <li>AI meal suggestions</li>
+        <li>Advanced calorie tracker</li>
+      </ul>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="plan">
+      <h2>Premium</h2>
+      <p class="price">₹299 / month</p>
+      <ul>
+        <li>All Pro features</li>
+        <li>Personal diet assistant</li>
+        <li>Priority support</li>
+      </ul>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
